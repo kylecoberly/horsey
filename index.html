@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DrmMetrics</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <base href="/drm-metrics/" />
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/drm-metrics.css">
+  </head>
+  <body>
+    <script>
+      window.DrmMetricsENV = {"environment":"development","baseURL":"drm-metrics","locationType":"auto","EmberENV":{"FEATURES":{}},"APP":{"LOG_ACTIVE_GENERATION":true,"LOG_VIEW_LOOKUPS":true}};
+      window.EmberENV = window.DrmMetricsENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/drm-metrics.js"></script>
+    <script>
+      window.DrmMetrics = require('drm-metrics/app')['default'].create(DrmMetricsENV.APP);
+    </script>
+  </body>
+</html>
