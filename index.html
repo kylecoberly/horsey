@@ -13,13 +13,11 @@
     <link rel="stylesheet" href="assets/drm-metrics.css">
   </head>
   <body>
-    <script>
-      window.DrmMetricsENV = {"environment":"development","baseURL":"drm-metrics","locationType":"auto","EmberENV":{"FEATURES":{}},"APP":{"LOG_ACTIVE_GENERATION":true,"LOG_VIEW_LOOKUPS":true}};
-      window.EmberENV = window.DrmMetricsENV.EmberENV;
-    </script>
     <script src="assets/vendor.js"></script>
     <script src="assets/drm-metrics.js"></script>
     <script>
+      window.DrmMetricsENV = {"environment":"development","baseURL":"drm-metrics","locationType":"auto","EmberENV":{"FEATURES":{}},"APP":{"LOG_ACTIVE_GENERATION":true,"LOG_VIEW_LOOKUPS":true}};
+      window.EmberENV = window.DrmMetricsENV.EmberENV;
       window.DrmMetrics = require('drm-metrics/app')['default'].create(DrmMetricsENV.APP);
     </script>
   </body>
